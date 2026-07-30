@@ -1,3 +1,47 @@
-﻿@tailwind base;
-@tailwind components;
-@tailwind utilities;
+﻿@import "tailwindcss";
+
+@theme {
+  --color-campus-50: #eef4ff;
+  --color-campus-100: #dce8ff;
+  --color-campus-500: #3b5bdb;
+  --color-campus-600: #2f4ac0;
+  --color-campus-700: #243a96;
+  --color-campus-900: #152352;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1e293b;
+}
+
+.panel {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 15px -3px rgba(226, 232, 240, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 1rem 1.25rem;
+}
+
+.stat-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 15px -3px rgba(226, 232, 240, 0.6);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+  transition: transform 200ms ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
